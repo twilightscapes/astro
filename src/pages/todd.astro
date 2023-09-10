@@ -55,6 +55,13 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 				margin: 0;
 			}
 
+
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+
+
 			.latest {
 				font-size: 2.5rem;
 				font-weight: 700;
@@ -68,35 +75,19 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
 	<body>
 		<BlogHeader />
-		<!-- <div class="wrapper">
+		<div class="wrapper">
 			<main class="content">
 				<section class="intro">
 					<h1 class="latest">{title}</h1>
 					<p>{description}</p>
-				</section> -->
-
-
-				<div class="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', textAlign:'center' }}>
-					<div class="spacer33"></div> 
-		
-						  <h1 class="neonText" style={{fontSize:'200%'}}>Got your message</h1>
-						  <p>I should respond shortly, depending on where I am at.</p>
-						  <div class="spacer33"></div> 
-						  <a href="/" class="button">
-							Back to Homepage
-						  </a>
-						</div>
-						<div class="spacer33"></div> 
-
-
-
+				</section>
 				<section aria-label="Blog post list">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
 				</section>
 			</main>
-			<footer>
+			<footer>THIS IS TODD
 			<a href="/admin">Admin Dashboard 🔐</a>
 			</footer>
-		<!-- </div> -->
+		</div>
 	</body>
 </html>
