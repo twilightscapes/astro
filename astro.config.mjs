@@ -1,9 +1,13 @@
 import { defineConfig } from 'astro/config';
 import NetlifyCMS from 'astro-netlify-cms';
+import react from '@astrojs/react';
+
 
 // https://astro.build/config
 export default defineConfig({
+  jsx: 'react', // Enable JSX for React syntax
   integrations: [
+    react(),
     NetlifyCMS({
       config: {
         // Use Netlify’s “Git Gateway” authentication and target our default branch
